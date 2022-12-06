@@ -33,7 +33,9 @@
     border-radius: 30px;
     padding: 10px;
   }
-  
+.ativa{
+  background-color: yellow;
+}
   input[type=button] {
     border-radius: 20px;
     cursor: pointer;
