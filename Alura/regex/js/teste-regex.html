@@ -1,0 +1,26 @@
+<html>
+    <script>
+        //Atividade 1
+        var alvo = '11a22b33c';
+        var exp = /(\d\d)(\w)/g;
+        var resultad=null;
+        while(resultado = exp.exec(alvo)){
+            console.log(resultado);
+        }
+        //Atividade 2
+        var anoMesDia = '2007-12-31';
+        var exp2 = /-/g;
+        anoMesDia = anoMesDia.replace(exp2, '/');
+        console.log(anoMesDia)
+        //Atividade 3
+        var arquivo = '100,200-150,200;20';
+        var exp3 = /[,;-]/;
+        var valores=arquivo.split(exp3);
+        console.log(valores);
+        //Atividade 4
+        var codigos = 'A121B12112C12212F12G01';
+        var exp4= /[A-Za-z]\d+/g;
+        var codigoSeparados = codigos.match(exp4);
+        console.log(codigoSeparados);
+    </script>
+</html>
