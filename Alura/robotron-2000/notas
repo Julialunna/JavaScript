@@ -1,1 +1,5 @@
-não é bom que o o js fique tão ligado ao html
+não é bom que o o js fique tão ligado ao html, data atributtes não pe do html 
+usa colchetes quando usar data-attribute
+valor do data atribute - dataset.nomeattirbute
+como fazer tag aparecer e desaparescer .styles.display ="block", style.display="none"
+acrescentar oou modificar data attribute = elemento.setattribute
