@@ -1,2 +1,3 @@
 operador ternário=> funciona como if else
 estrutura=> condição ? se sim:se nao
+template acento grave ` xx ${var} xx`
