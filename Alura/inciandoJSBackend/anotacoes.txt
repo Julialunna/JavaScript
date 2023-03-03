@@ -1,3 +1,9 @@
 operador ternário=> funciona como if else
 estrutura=> condição ? se sim:se nao
 template acento grave ` xx ${var} xx`
+parametro = função
+Não passar um parâmetro=>NaN
+Definir um valor padrão para os parametro, quando declarar eles atribua um valor
+const pode ter uma função, mas so pode usa-la dps de declará-la
+const nome = param=> código
+se tem mais d euma linha de código precisa de chaves e return 
