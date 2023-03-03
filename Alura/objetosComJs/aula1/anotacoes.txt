@@ -1,0 +1,3 @@
+para usar apenas uma parte da string, string.substring(psiçãoinicial, poisção final
+)
+é possível acessar com [""], além do ponto, pode-se usar isso quando não se sabe o nome da chave e recebe ela como var 
