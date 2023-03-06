@@ -1,0 +1,77 @@
+Atividades
+01-CNPJ->regex
+\d{2}\.\d{3}\.\d{3}[/]\d{4}-\d{2}
+
+02-ip->regex
+\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+
+03--CEP->regex
+\d{5}-\d{3}
+
+04-celular-> regex
+\(\d{2}\) \d{4}-\d{4}
+05-<code> ou</code>-> regex
+</?code>
+
+06-Placa de carro->regex
+[A-Z]{3}-\d{4}
+
+07-9.8 - Robson, 7.1 - Teresa, 4.5 - Armênio, 6.5 - Zulu, 7.7 - Stefania, 7.8 - João, 5.0 - Romeu, 7.2 - Pompilho, 3.1 - Reinaldo, 7.3 - Bernadete, 4.7 - Cinério 
+separar notas de 7.2-7.9 e nomes
+7.[2-9]\s-\s[A-Z][a-zçõãâáé]+
+
+08-O username precisa ser da seguinte forma:
+O limite é de 10 caracteres;
+O primeiro caractere deve ser uma letra do alfabeto, não pode ser um número;
+A partir do segundo caractere podemos ter letras maiúsculas, minúsculas e números;
+Como deve ficar a anotação @Pattern com uma expressão regular com essas características?
+Pattern:[A-Za-z][A-Za-z0-9]{1,9}
+
+09-Temos aqui um erro que aconteceu em um sistema:
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failureCOPIAR CÓDIGO
+Sabendo que o erro sempre começa com a expressão Caused by:, faça uma regex que capture-o.
+^Caused by:.+
+
+10-Nos capítulos anteriores definimos uma regex para encontrar um CPF dentro de uma string. Usamos a regex abaixo:
+ \d{3}[-.]?\d{3}[.-]?\d{3}[.-]?\d{2}
+A sua tarefa não é calcular e sim definir um grupo na regex em cima que devolve os dígitos verificadores. Mãos à obra!
+ \d{3}[-.]?\d{3}[.-]?\d{3}[.-]?(\d{2})
+
+11-Um agente secreto conseguiu capturar a seguinte mensagem criptografada:
+Z171PZ7AZ23PZ7819AZ78GZ1AZ99IZ34OCOPIAR CÓDIGO
+Depois de algum tempo, ele descobriu a seguinte lei de formação: cada letra da palavra recebe o prefixo Z, mas não apenas isso. A letra Z é seguida de um número com um ou mais dígitos.
+Com base nessa informação ultra secreta, crie uma expressão regular que consiga evidenciar a palavra secreta.
+Z\d+([A-Za-z])
+
+12-Nenhuma aplicação é perfeita e exceções acontecem. Normalmente as exceções serão guardadas dentro de um arquivo log. Uma tarefa comum é analisar e verificar os arquivos de log para descobrir possíveis problemas no sistema.
+Uma exceção no arquivo de log tem a seguinte cara:
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failureCOPIAR CÓDIGO
+Queremos usar uma Regex que possa encontrar essa linha e separar em dois grupos, Causa e Descrição para simplificar a leitura:
+
+Caused by: ([\w.\s]+)CommunicationsException:([\w\s]+)
+
+13-O email deve ter um @ e terminar com caelum.com.br ou alura.com.br. O nome do usuário (tudo antes do @) tem apenas letras minúsculas, pode ter um número no final e tem de 5 a 15 caracteres.
+
+Por exemplo:
+
+super.mario@caelum.com.br extrai super.mario
+bowser1@alura.com.br extrai bowser1
+([a-z.]{4,14}[a-z\d]{1})(?:@caelum.com.br|@alura.com.br)
+
+14-A validação de um email é um dos exemplos clássicos sobre expressões regulares e claro que não pode faltar neste curso.
+
+Novamente, é preciso ajudar a equipe de desenvolvedores do Alura, mas agora é preciso validar qualquer email!
+([\w.-]\.?)+(@(?:(?:[\w\d]+)\.)+(?:[\w\d]{2,4}))+$
+
+15-Precisamos ajudar os correios a entregar corretamente suas correspondências. Para tal, disponibilizaram-nos um arquivo com diversas linhas, nas quais são necessárias as informações: Nome, Rua, Número e CEP.
+
+As outras informações também devem ser separadas para futuros serviços dos correios, porém não precisamos capturá-las neste momento.
+
+^([\w\s]+)\|(?:\d{2}\/\d{2}\/\d{4})\|([\w\s]+)\|(\d{2,4})\|(\d{5}-\d{3})\|(?:[\w\s]+)
+
+João Fulano,123.456.789-00,21 de Maio 
+de 1993,(21)3079-9987,Rua do Ouvidor,50,20040-030,Rio de Janeiro
+Maria Fulana,98765432100,11 de Abril de 1995,(11)933339871,Rua Vergueiro,3185,04101-300, São Paulo
+denise teste,987.654.321.00,28 de Dezembro de 1991,(31)45562712,SCS Qd. 8 Bl. B-50,11,70333-900, Rio Grande
+
+
