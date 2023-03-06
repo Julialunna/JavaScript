@@ -1,3 +1,6 @@
 existe tipo date em js 
 obejto literal é um objeto unico 
 .bind() liga uma função a um objeto 
+call() executa uma função do objeto usando this diferente 
+apply funcioa assim taambém, mas recebe uma lista de argumentos
+Object.setPrototypeOf(obj que recebe prorpiedades, obj que fornce) define protótipo
