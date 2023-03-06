@@ -1,0 +1,3 @@
+existe tipo date em js 
+obejto literal é um objeto unico 
+.bind() liga uma função a um objeto 
