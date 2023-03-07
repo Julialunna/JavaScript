@@ -28,6 +28,11 @@ export default class User {
     get ativo(){
         return this.#ativo
     }
+
+    set nome(novoNome){
+        this.#nome=novoNome
+    }
+            
     
     exibirInfos(){
         const objUser = this.#montaObjUser()
