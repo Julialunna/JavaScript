@@ -1,0 +1,6 @@
+para usar socket io, criar servidorhttp com http.createServer(app); e usar listen nele 
+Depois importar Server de socketio, criar constante com ele e chamar io.on()
+em arquivo javascript chamado no html(na página que  queremos conectada), const socket=io(); 
+socket.id-> cada conexão tem um id
+socket emit("nome", "valor"), no outro lado socket.on(nome evento, function)
+front=emit(), back=on()
