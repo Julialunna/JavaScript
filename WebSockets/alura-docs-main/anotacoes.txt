@@ -4,3 +4,4 @@ em arquivo javascript chamado no html(na página que  queremos conectada), const
 socket.id-> cada conexão tem um id
 socket emit("nome", "valor"), no outro lado socket.on(nome evento, function)
 front=emit(), back=on()
+socket.broadcast-> para todos menos o que está emitindo 
