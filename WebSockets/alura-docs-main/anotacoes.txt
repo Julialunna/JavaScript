@@ -5,3 +5,7 @@ socket.id-> cada conexão tem um id
 socket emit("nome", "valor"), no outro lado socket.on(nome evento, function)
 front=emit(), back=on()
 socket.broadcast-> para todos menos o que está emitindo 
+Para ter acesso a url que está no momento params=new URLSearchParams(window.location.search)
+para saber valor de parametro=params.get("nome");
+socket.join->entra tipo numa sala, todos ficma juntos, com socket.to() vai só para a sala no parâmetro
+io.to()manda para a pessoa que enivou tb
