@@ -17,6 +17,9 @@ function inserirLinkDocumento(nomeDocumento){
     ${nomeDocumento}
   </a>`
 }
+function removerLinkDocumento(){
+    re
+}
 
 
-export{inserirLinkDocumento};
+export{inserirLinkDocumento, removerLinkDocumento};
