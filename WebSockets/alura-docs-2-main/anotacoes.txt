@@ -2,3 +2,4 @@ npm i baixa o que tiver no package.json
 evento.preventdefault-> evita que a página recarregue depois de dar submmit
 form["input-usuario"] acessa input
 importar socket.io.js para usar io()
+boa prática para senhas: 
