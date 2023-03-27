@@ -1,5 +1,6 @@
 import { encontrarUsuario } from "../db/usuariosdb.js";
 import autenticarUsuario from "../utils/autenticarUsuario.js";
+import gerarJwt from "../utils/gerarJwt.js";
 
 function registrarEventosLogin(socket,io){
     socket.on("autenticar_usuario", async ({nome, senha})=>{
@@ -8,7 +9,8 @@ function registrarEventosLogin(socket,io){
         if(usuario){
             const autenticado=autenticarUsuario(senha, usuario);
             if(autenticado){
-                socket.emit("autenticação_sucesso");
+                const tokenJwt = gerarJwt({nomeUsuario:nome});
+                socket.emit("autenticação_sucesso", tokenJwt);
             }else{
                 socket.emit("autenticação_erro");
             }
