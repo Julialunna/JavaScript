@@ -11,3 +11,4 @@ NAMESPACES
 IO.OF("NAMESPACES)
 socket.to nao manda para quem enviou io.to manda
 socket.on dentro de socket.on de determinada área, vai afzer o socket on ocorrer só lá
+para guardar informação no socket, socket.data
