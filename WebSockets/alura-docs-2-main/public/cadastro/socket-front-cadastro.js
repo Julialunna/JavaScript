@@ -13,5 +13,4 @@ socket.on("cadastro_erro", ()=>{
 socket.on("usuario_ja_existente", ()=>{
     alert("Usuário já existe =(");
 })
-export  {emitirCadastrarUsuario
-}
+export  {emitirCadastrarUsuario};
