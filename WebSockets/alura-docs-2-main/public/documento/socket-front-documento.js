@@ -3,7 +3,7 @@ import { alertarERedirecionar, atualizaTextoEditor } from "./documento.js";
 
 const socket = io("/usuarios", {
   auth: {
-    tokenJwt: obterCookie("tokenJwt"),
+    token: obterCookie("tokenJwt"),
   },
 });
 
