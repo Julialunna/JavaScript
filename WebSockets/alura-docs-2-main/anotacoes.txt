@@ -4,3 +4,11 @@ form["input-usuario"] acessa input
 importar socket.io.js para usar io()
 boa prática para senhas: hash e sal
 cookies tem chave e valor
+middleware mediador de cliente e servidor -> io.use, antes de conectar
+por isso, usa-se quando chama o io, e passa função que ve se tem cookie
+depois socket.handshake.auth.token
+NAMESPACES
+IO.OF("NAMESPACES)
+socket.to nao manda para quem enviou io.to manda
+socket.on dentro de socket.on de determinada área, vai afzer o socket on ocorrer só lá
+para guardar informação no socket, socket.data
