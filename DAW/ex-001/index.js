@@ -12,6 +12,9 @@ function decide_exercicio(){
         case 'x': imprime_jogo_xadrez();
         case 'p':verifica_palindromo();
         case'pd':contagem_diferente();
+        case 'min': min(9,19);
+        case'max':max();
+        case 'mod2': mod2(4);
     }
 }
 
@@ -89,6 +92,30 @@ function contagem_diferente(){
             console.log(str);
         }
     }
+}
+
+function min(a,b){
+    var menor;
+    if(a<b){
+        menor=a;
+    }else{
+        menor=b;
+    }
+    console.log(menor)
+}
+
+function max(a,b){
+    var maior;
+    if(a>b){
+        maior=a;
+    }else{
+        maior=b;
+    }
+    console.log(maior)
+}
+
+function mod2(number){
+    
 }
 //verifica_palindromo();
 decide_exercicio();
